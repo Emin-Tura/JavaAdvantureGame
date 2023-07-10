@@ -16,16 +16,15 @@ public class ToolStore extends NormalLoc {
             selectCase = input.nextInt();
         }
         switch (selectCase) {
-            case 1:
+            case 1 -> {
                 printWeapon();
                 buyWeapon();
-                break;
-            case 2:
-                printArmor();
-                break;
-            case 3:
+            }
+            case 2 -> printArmor();
+            case 3 -> {
                 System.out.println("Çıkış yapılıyor...");
                 return false;
+            }
         }
         return true;
     }
